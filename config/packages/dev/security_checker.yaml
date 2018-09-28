@@ -4,6 +4,5 @@ services:
 
     SensioLabs\Security\Command\SecurityCheckerCommand:
         arguments: ['@SensioLabs\Security\SecurityChecker']
-        public: false
         tags:
-            - { name: console.command, command: 'security:check' }
+            - { name: console.command }
