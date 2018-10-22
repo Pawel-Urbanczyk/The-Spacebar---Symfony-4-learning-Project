@@ -1,19 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Pawel
- * Date: 05.10.2018
- * Time: 12:42
- */
-
 namespace App\Helper;
-
 
 use Psr\Log\LoggerInterface;
 
 trait LoggerTrait
 {
-
     /**
      * @var LoggerInterface|null
      */
@@ -22,18 +13,15 @@ trait LoggerTrait
     /**
      * @required
      */
-    public function setLogger(LoggerInterface $logger){
-
+    public function setLogger(LoggerInterface $logger)
+    {
         $this->logger = $logger;
-
     }
 
-    public function logInfo(string $message, array $context = [])
+    private function logInfo(string $message, array $context = [])
     {
-        if($this->logger){
-            $this->logger->info($message,$context);
+        if ($this->logger) {
+            $this->logger->info($message, $context);
         }
     }
-
-
 }
