@@ -16,7 +16,7 @@ final class Version20181022133315 extends AbstractMigration
         $this->abortIf($this->connection->getDatabasePlatform()->getName() !== 'mysql', 'Migration can only be executed safely on \'mysql\'.');
 
         $this->addSql('ALTER TABLE article ADD created_at DATETIME DEFAULT NULL, ADD updated_at DATETIME DEFAULT NULL');
-        $this->addSql('UPDATE article SET createdAt = NOW(), updatedAt = NOW()');
+        $this->addSql('UPDATE article SET created_at = NOW(), updated_at = NOW()');
     }
 
     public function down(Schema $schema) : void
