@@ -6,6 +6,7 @@ namespace App\Form;
 
 use App\Entity\Article;
 use App\Entity\User;
+use App\Repository\UserRepository;
 use function Clue\StreamFilter\fun;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
@@ -17,6 +18,15 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 
 class ArticleFormType extends AbstractType
 {
+
+    private $userRepository;
+
+    public function __construct(UserRepository $userRepository)
+    {
+
+        $this->userRepository = $userRepository;
+    }
+
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
@@ -34,7 +44,9 @@ class ArticleFormType extends AbstractType
                 'choice_label'=>function(User $user){
                     return sprintf('(%d) %s', $user->getId(), $user->getEmail());
                 },
-                'placeholder'=>'Choose an atuhor'
+                'placeholder'=>'Choose an atuhor',
+                'choices' => $this->userRepository
+                    ->findAllEmailAlphabetical()
             ])
         ;
     }
