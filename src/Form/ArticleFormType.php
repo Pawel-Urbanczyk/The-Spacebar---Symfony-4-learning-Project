@@ -34,7 +34,9 @@ class ArticleFormType extends AbstractType
                 'label'=>'Title of Yours article',
                 'attr'=>['placeholder'=>'Type Something Funny...']
             ])
-            ->add('content', TextareaType::class)
+            ->add('content', null,[
+                'rows' => 15
+            ])
             ->add('publishedAt', null, [
                 'widget' => 'single_text'
             ])
