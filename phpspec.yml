@@ -1,0 +1,9 @@
+suites:
+  default:
+    namespace: App
+    psr4_prefix: App
+
+formatter.name: nyan.dino
+
+extensions:
+    PhpSpec\NyanFormattersExtension\Extension: ~

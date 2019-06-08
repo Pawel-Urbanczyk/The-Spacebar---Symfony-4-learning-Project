@@ -1,4 +1,22 @@
 {
+    "behat/behat": {
+        "version": "v3.5.0"
+    },
+    "behat/gherkin": {
+        "version": "v4.6.0"
+    },
+    "behat/mink": {
+        "version": "v1.7.1"
+    },
+    "behat/mink-browserkit-driver": {
+        "version": "1.3.3"
+    },
+    "behat/mink-extension": {
+        "version": "2.3.1"
+    },
+    "behat/mink-goutte-driver": {
+        "version": "v1.2.1"
+    },
     "behat/transliterator": {
         "version": "v1.2.0"
     },
@@ -7,6 +25,9 @@
     },
     "composer/ca-bundle": {
         "version": "1.1.0"
+    },
+    "container-interop/container-interop": {
+        "version": "1.2.0"
     },
     "doctrine/annotations": {
         "version": "1.0",
@@ -94,6 +115,9 @@
             "version": "1.0",
             "ref": "70062abc2cd58794d2a90274502f81b55cd9951b"
         }
+    },
+    "fabpot/goutte": {
+        "version": "v3.2.3"
     },
     "fzaninotto/faker": {
         "version": "v1.8.0"
@@ -191,6 +215,9 @@
     "phpdocumentor/type-resolver": {
         "version": "0.4.0"
     },
+    "phpspec/nyan-formatters": {
+        "version": "1.0.x-dev"
+    },
     "phpspec/php-diff": {
         "version": "v1.1.0"
     },
@@ -257,11 +284,17 @@
     "symfony/asset": {
         "version": "v4.0.3"
     },
+    "symfony/browser-kit": {
+        "version": "v4.3.1"
+    },
     "symfony/cache": {
         "version": "v4.0.2"
     },
     "symfony/cache-contracts": {
         "version": "v1.1.1"
+    },
+    "symfony/class-loader": {
+        "version": "v3.4.28"
     },
     "symfony/config": {
         "version": "v4.0.2"
@@ -274,6 +307,9 @@
             "version": "3.3",
             "ref": "9f94d3ea453cd8a3b95db7f82592d7344fe3a76a"
         }
+    },
+    "symfony/css-selector": {
+        "version": "v3.4.28"
     },
     "symfony/debug": {
         "version": "v4.0.2"
@@ -292,6 +328,9 @@
     },
     "symfony/doctrine-bridge": {
         "version": "v4.1.6"
+    },
+    "symfony/dom-crawler": {
+        "version": "v4.3.1"
     },
     "symfony/dotenv": {
         "version": "v4.0.2"
@@ -532,6 +571,12 @@
     },
     "webmozart/assert": {
         "version": "1.3.0"
+    },
+    "whatthejeff/fab": {
+        "version": "v1.0.0"
+    },
+    "whatthejeff/nyancat-scoreboard": {
+        "version": "v1.1.1"
     },
     "zendframework/zend-code": {
         "version": "3.3.1"
