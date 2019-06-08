@@ -149,6 +149,7 @@
       <path value="$PROJECT_DIR$/vendor/phpspec/nyan-formatters" />
       <path value="$PROJECT_DIR$/vendor/whatthejeff/nyancat-scoreboard" />
       <path value="$PROJECT_DIR$/vendor/whatthejeff/fab" />
+      <path value="$PROJECT_DIR$/vendor/liip/functional-test-bundle" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />

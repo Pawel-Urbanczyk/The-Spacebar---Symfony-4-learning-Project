@@ -33,6 +33,7 @@
         "doctrine/doctrine-fixtures-bundle": "^3.0",
         "easycorp/easy-log-handler": "^1.0.2",
         "fzaninotto/faker": "^1.8",
+        "liip/functional-test-bundle": "~2.0@alpha",
         "phpspec/phpspec": "^5.1",
         "sensiolabs/security-checker": "^4.1",
         "symfony/debug-bundle": "^3.3|^4.0",

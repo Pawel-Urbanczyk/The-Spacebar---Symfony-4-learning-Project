@@ -31,7 +31,9 @@ class Kernel extends BaseKernel
             if (isset($envs['all']) || isset($envs[$this->environment])) {
                 yield new $class();
             }
+
         }
+
     }
 
     protected function configureContainer(ContainerBuilder $container, LoaderInterface $loader)

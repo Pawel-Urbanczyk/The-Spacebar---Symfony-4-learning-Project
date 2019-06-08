@@ -9,6 +9,7 @@ framework:
     session:
         handler_id: ~
 
+
     #esi: ~
     #fragments: ~
     php_errors:

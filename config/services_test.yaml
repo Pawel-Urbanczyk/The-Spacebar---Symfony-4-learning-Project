@@ -2,6 +2,8 @@ services:
     _defaults:
         public: true
 
+
+
 doctrine:
     dbal:
         url: 'sqlite:///%kernel.project_dir%/var/data/test.sqlite'

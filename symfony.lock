@@ -149,6 +149,9 @@
     "knplabs/knp-time-bundle": {
         "version": "1.8.0"
     },
+    "liip/functional-test-bundle": {
+        "version": "2.0.0-alpha16"
+    },
     "michelf/php-markdown": {
         "version": "1.8.0"
     },
