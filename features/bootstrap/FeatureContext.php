@@ -165,4 +165,34 @@ class FeatureContext extends RawMinkContext implements Context, SnippetAccepting
     }
 
 
+    /**
+     * @When I wait for the select field to load
+     */
+    public function iWaitForTheSelectFieldToLoad()
+    {
+        $this->getSession()->wait(
+            5000,
+            "$('#article_form_specificLocationName:visible').length
+");
+    }
+
+    /**
+     * @When I click Edit in :rowText row
+     */
+    public function iClickEditInRow($rowText)
+    {
+        $row = $this->findRowByText($rowText);
+        $link = $row->findLink('Edit');
+        //assertNull($link,'Could not find Edit link');
+        $link->click();
+    }
+
+    private function findRowByText($linkText)
+    {
+        $row = $this->getPage()->find('css',sprintf('table tr:contains("%s")', $linkText));
+
+        return $row;
+    }
+
+
 }
