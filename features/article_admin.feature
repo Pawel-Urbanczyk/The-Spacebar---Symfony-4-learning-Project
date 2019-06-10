@@ -15,6 +15,7 @@ Feature: Article Admin Area
     When I fill in title box with "Letters"
     And I fill in "article_form[content]" with "ABC"
     And I select "Near a star" from "article_form[location]"
+    And I wait for the select field to load
   # And I select "Polaris" from "article_form[specificLocationName]"
     And I fill in "article_form[author]" with "admin0@spacebar.com"
     And I press "Create"
