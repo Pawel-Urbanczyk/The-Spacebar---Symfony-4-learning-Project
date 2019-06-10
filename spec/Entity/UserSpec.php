@@ -12,4 +12,6 @@ class UserSpec extends ObjectBehavior
     {
         $this->shouldHaveType(User::class);
     }
+
+
 }

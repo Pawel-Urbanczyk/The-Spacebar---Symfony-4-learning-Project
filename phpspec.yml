@@ -3,6 +3,9 @@ suites:
     namespace: App
     psr4_prefix: App
 
+matchers:
+  - spec\Matcher\ReturnZero
+
 formatter.name: nyan.dino
 
 extensions:
